@@ -1,0 +1,53 @@
+/*Creating database*/ 
+CREATE DATABASE ClinicaCentroSaude;
+
+USE ClinicaCentroSaude
+GO
+
+CREATE TABLE Paciente (
+	ID SMALLINT NOT NULL PRIMARY KEY IDENTITY(1000,1),
+	Nome VARCHAR NOT NULL,
+	Sobrenome VARCHAR NOT NULL,
+	DataNasc DATE NOT NULL,
+	Endereco VARCHAR(20),
+	Bairro VARCHAR (10) NOT NULL,
+	Cidade VARCHAR (20) NOT NULL,
+	Estado VARCHAR (20) NOT NULL,
+	Telefone char (11) NOT NULL,
+	Email VARCHAR (20) NOT NULL
+);
+
+CREATE TABLE Setor (
+	ID_Setor TINYINT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	Nome_Setor NCHAR(10) NOT NULL
+);
+
+
+CREATE TABLE Funcionarios (
+	ID_Funcionario SMALLINT NOT NULL PRIMARY KEY IDENTITY(100,1),
+	Nome VARCHAR NOT NULL,
+	Sobrenome VARCHAR NOT NULL,
+	DataNasc DATE NOT NULL,
+	Endereco VARCHAR(20),
+	Bairro VARCHAR (10) NOT NULL,
+	Cidade VARCHAR (20) NOT NULL,
+	Estado VARCHAR (20) NOT NULL,
+	Telefone char (11) NOT NULL,
+	Email VARCHAR (20) NOT NULL,
+	ID_Setor TINYINT NOT NULL,
+	Profissao VARCHAR (20) NOT NULL
+CONSTRAINT fk_ID_Setor FOREIGN KEY (ID_Setor)
+	REFERENCES dbo.Setor(ID_Setor)
+);
+
+
+CREATE TABLE Estoque (
+	ID_Produto INT NOT NULL PRIMARY KEY IDENTITY(10000,1),
+	Nome_Produto VARCHAR (20) NOT NULL,
+	Quantidade SMALLINT
+);
+
+
+
+	
+
