@@ -6,15 +6,16 @@ GO
 
 CREATE TABLE Paciente (
 	ID SMALLINT NOT NULL PRIMARY KEY IDENTITY(1000,1),
-	Nome VARCHAR NOT NULL,
-	Sobrenome VARCHAR NOT NULL,
+	Nome VARCHAR (20) NOT NULL,
+	Sobrenome VARCHAR (20) NOT NULL,
 	DataNasc DATE NOT NULL,
-	Endereco VARCHAR(20),
-	Bairro VARCHAR (10) NOT NULL,
-	Cidade VARCHAR (20) NOT NULL,
+	Endereco VARCHAR(50),
+	Bairro VARCHAR (50) NOT NULL,
+	Cidade VARCHAR (50) NOT NULL,
 	Estado VARCHAR (20) NOT NULL,
 	Telefone char (11) NOT NULL,
-	Email VARCHAR (20) NOT NULL
+	Email VARCHAR (50) NOT NULL
+	DataCadastroPaciente DATETIME DEFAULT (GETDATE()) NOT NULL 
 );
 
 CREATE TABLE Setor (
@@ -25,17 +26,24 @@ CREATE TABLE Setor (
 
 CREATE TABLE Funcionarios (
 	ID_Funcionario SMALLINT NOT NULL PRIMARY KEY IDENTITY(100,1),
-	Nome VARCHAR NOT NULL,
-	Sobrenome VARCHAR NOT NULL,
+	Nome VARCHAR (10) ULL,
+	Sobrenome VARCHAR (10) NOT NULL,
 	DataNasc DATE NOT NULL,
-	Endereco VARCHAR(20),
-	Bairro VARCHAR (10) NOT NULL,
+	Endereco VARCHAR(50),
+	Bairro VARCHAR (30) NOT NULL,
 	Cidade VARCHAR (20) NOT NULL,
 	Estado VARCHAR (20) NOT NULL,
 	Telefone char (11) NOT NULL,
 	Email VARCHAR (20) NOT NULL,
-	ID_Setor TINYINT NOT NULL,
-	Profissao VARCHAR (20) NOT NULL
+	ID_Setor TINYINT NOT NULL, 
+	Profissao VARCHAR (20) NOT NULL,
+	Salario DECIMAL(6,0) NOT NULL,
+	DataAdmissao date NOT NULL,
+	Status VARCHAR(10) NOT NULL,
+	DataDemissao date,
+	DataCadastroFuncionario DATETIME DEFAULT (GETDATE()) NOT NULL
+
+-- Defining foreign key
 CONSTRAINT fk_ID_Setor FOREIGN KEY (ID_Setor)
 	REFERENCES dbo.Setor(ID_Setor)
 );
@@ -43,23 +51,38 @@ CONSTRAINT fk_ID_Setor FOREIGN KEY (ID_Setor)
 
 CREATE TABLE Estoque (
 	ID_Produto INT NOT NULL PRIMARY KEY IDENTITY(10000,1),
-	Nome_Produto VARCHAR (20) NOT NULL,
-	Quantidade SMALLINT
+	Nome_Produto VARCHAR (30) NOT NULL,
+	QuantidadeUn SMALLINT,
+	Valor_ProdutoUn DECIMAL(6,0) NOT NULL,
+	DataCadastroEstoque DATETIME DEFAULT (GETDATE()) NOT NULL
 );
 
 
-/*Em processo*/
 CREATE TABLE Agendamentos (
 	Data DATE NOT NULL,
 	Hora TIME NOT NULL,
+	Valor_Consulta DECIMAL(6,0) NOT NULL,
 	ID_Paciente SMALLINT NOT NULL,
-	Nome VARCHAR (10) FOREIGN KEY,
-	CONSTRAINT fk_Nome FOREIGN KEY (Nome)
-	REFERENCES Paciente (Nome),
-	CONSTRAINT fk_ID_Paciente FOREIGN KEY (ID_Paciente)
+	ID_Funcionario SMALLINT NOT NULL,
+	TipoAgendamento VARCHAR(10) NOT NULL,
+	DataCadastroAgendamento DATETIME DEFAULT (GETDATE()) NOT NULL
+
+-- Defining foreign keys
+CONSTRAINT fk_ID_Paciente FOREIGN KEY (ID_Paciente)
 	REFERENCES Paciente (ID_Paciente),
-	CONSTRAINT fk_ID_Funcionario FOREIGN KEY (ID_Funcionario)
-	REFERENCES Funcionario (ID_Funcionario)
+CONSTRAINT fk_ID_Funcionario FOREIGN KEY (ID_Funcionario)
+	REFERENCES Funcionarios (ID_Funcionario)
 );
-	
+
+
+CREATE TABLE NivelAcesso (
+	Nivel VARCHAR(10) PRIMARY KEY NOT NULL,
+	ID_Setor TINYINT NOT NULL,
+
+-- Defining foreign key
+	CONSTRAINT fk_ID_Setor_Nivel FOREIGN KEY (ID_Setor)
+	REFERENCES Setor (ID_Setor)
+);
+
+
 

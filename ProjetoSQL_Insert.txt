@@ -1,0 +1,165 @@
+-- Insert of datas 
+-- *All data is fictitious and randomly generated for demonstration purposes*
+
+
+USE ClinicaCentroSaude
+GO
+
+INSERT INTO Paciente (Nome, Sobrenome, DataNasc, Endereco, Bairro, Cidade, Estado, Telefone, Email)
+VALUES 
+('Ana', 'Silva', '1985-03-12', 'Rua A, 123', 'Centro', 'São Paulo', 'SP', '11987654321', 'ana.silva@gmail.com'),
+('Carlos', 'Oliveira', '1990-07-25', 'Rua B, 456', 'Jardim', 'Rio de Janeiro', 'RJ', '21987654321', 'carlos.oliveira@hotmail.com'),
+('Maria', 'Santos', '1978-11-03', 'Rua C, 789', 'Vila Nova', 'Belo Horizonte', 'MG', '31987654321', 'maria.santos@gmail.com'),
+('Pedro', 'Costa', '1982-02-17', 'Rua D, 101', 'Boa Vista', 'Recife', 'PE', '81987654321', 'pedro.costa@hotmail.com'),
+('Lucia', 'Martins', '1995-12-30', 'Rua E, 202', 'Zona Leste', 'Curitiba', 'PR', '41987654321', 'lucia.martins@gmail.com'),
+('Roberto', 'Gomes', '1989-04-21', 'Rua F, 303', 'Centro', 'Porto Alegre', 'RS', '51987654321', 'roberto.gomes@hotmail.com'),
+('Patrícia', 'Lima', '1987-08-14', 'Rua G, 404', 'São Cristóvão', 'Fortaleza', 'CE', '85987654321', 'patricia.lima@gmail.com'),
+('João', 'Pereira', '1993-09-05', 'Rua H, 505', 'Barra', 'Manaus', 'AM', '92987654321', 'joao.pereira@hotmail.com'),
+('Fernanda', 'Alves', '1984-05-16', 'Rua I, 606', 'Centro', 'Salvador', 'BA', '71987654321', 'fernanda.alves@gmail.com'),
+('Lucas', 'Rocha', '1991-10-22', 'Rua J, 707', 'Centro', 'Brasília', 'DF', '61123456789', 'lucas.rocha@hotmail.com');
+('Mariana', 'Barbosa', '1980-06-17', 'Rua K, 808', 'Zona Norte', 'São Luís', 'MA', '98123456789', 'mariana.barbosa@gmail.com'),
+('André', 'Souza', '1988-01-09', 'Rua L, 909', 'Alvorada', 'Belém', 'PA', '91123456789', 'andre.souza@hotmail.com'),
+('Juliana', 'Silveira', '1994-07-26', 'Rua M, 110', 'Santa Cruz', 'Natal', 'RN', '84123456789', 'juliana.silveira@gmail.com'),
+('Eduardo', 'Castro', '1986-04-11', 'Rua N, 121', 'Central', 'Campo Grande', 'MS', '67123456789', 'eduardo.castro@hotmail.com'),
+('Aline', 'Ferreira', '1992-03-03', 'Rua O, 132', 'Jardim das Flores', 'João Pessoa', 'PB', '83123456789', 'aline.ferreira@gmail.com'),
+('Marcos', 'Pinto', '1985-11-22', 'Rua P, 143', 'Lagoa', 'Goiânia', 'GO', '62123456789', 'marcos.pinto@hotmail.com'),
+('Claudia', 'Cardoso', '1983-12-12', 'Rua Q, 154', 'Praia Grande', 'São Vicente', 'SP', '11987654322', 'claudia.cardoso@gmail.com'),
+('Renato', 'Melo', '1981-06-06', 'Rua R, 165', 'Santo Antônio', 'Campinas', 'SP', '11987654323', 'renato.melo@hotmail.com'),
+('Vanessa', 'Nogueira', '1996-02-14', 'Rua S, 176', 'Boa Vista', 'Uberlândia', 'MG', '31987654322', 'vanessa.nogueira@gmail.com'),
+('Thiago', 'Vasconcelos', '1989-09-05', 'Rua T, 187', 'Cidade Nova', 'Maringá', 'PR', '41987654322', 'thiago.vasconcelos@hotmail.com'),
+('Camila', 'Tavares', '1987-09-27', 'Rua U, 198', 'Centro', 'Cuiabá', 'MT', '65123456789', 'camila.tavares@gmail.com'),
+('Bruno', 'Siqueira', '1990-12-19', 'Rua V, 209', 'Vila Mariana', 'Teresina', 'PI', '86123456789', 'bruno.siqueira@hotmail.com'),
+('Lívia', 'Nunes', '1993-11-30', 'Rua W, 210', 'Riachuelo', 'Santos', 'SP', '13987654321', 'livia.nunes@gmail.com'),
+('Eduarda', 'Pimentel', '1994-03-22', 'Rua X, 221', 'Água Verde', 'Aracaju', 'SE', '79234567890', 'eduarda.pimentel@hotmail.com'),
+('Felipe', 'Silveira', '1985-06-28', 'Rua Y, 232', 'Centro', 'Maceió', 'AL', '82123456789', 'felipe.silveira@gmail.com'),
+('Isabela', 'Lopes', '1988-07-15', 'Rua Z, 243', 'Boa Vista', 'Macapá', 'AP', '96123456789', 'isabela.lopes@hotmail.com'),
+('Giovanni', 'Araújo', '1990-12-07', 'Rua AA, 254', 'Novo Hamburgo', 'Pelotas', 'RS', '53987654321', 'giovanni.araujo@gmail.com'),
+('Julio', 'Correia', '1991-02-20', 'Rua AB, 265', 'Centro', 'Rio Branco', 'AC', '68234567890', 'julio.correia@hotmail.com');
+('Marcel', 'Ribeiro', '1983-04-18', 'Rua AC, 276', 'Vila São Francisco', 'Palmas', 'TO', '63987654321', 'marcel.ribeiro@gmail.com'),
+('Sandra', 'Morais', '1992-11-04', 'Rua AD, 287', 'São João', 'Caxias do Sul', 'RS', '54987654321', 'sandra.morais@hotmail.com'),
+('Hugo', 'Santos', '1980-10-11', 'Rua AE, 298', 'Vila Aparecida', 'Ponta Grossa', 'PR', '41987654323', 'hugo.santos@gmail.com'),
+('Aline', 'Barreto', '1991-03-08', 'Rua AF, 309', 'Vila União', 'Vitória', 'ES', '27987654321', 'aline.barreto@hotmail.com'),
+('Gustavo', 'Mendes', '1986-07-16', 'Rua AG, 310', 'Centro', 'João Pessoa', 'PB', '83123456789', 'gustavo.mendes@gmail.com'),
+('Paula', 'Castro', '1994-12-05', 'Rua AH, 321', 'Vila dos Remédios', 'São José dos Campos', 'SP', '12987654321', 'paula.castro@hotmail.com'),
+('Simone', 'Ferreira', '1982-08-19', 'Rua AI, 332', 'Jardim São Luís', 'Londrina', 'PR', '43987654321', 'simone.ferreira@gmail.com'),
+('Marcelo', 'Dias', '1987-02-12', 'Rua AJ, 343', 'Vila Nova', 'São Vicente', 'SP', '11987654324', 'marcelo.dias@hotmail.com'),
+('Renata', 'Fonseca', '1990-05-29', 'Rua AK, 354', 'Vila América', 'Santa Maria', 'RS', '55123456789', 'renata.fonseca@gmail.com'),
+('Daniel', 'Gonçalves', '1993-09-03', 'Rua AL, 365', 'Centro', 'Uberaba', 'MG', '34987654321', 'daniel.goncalves@hotmail.com'),
+('Júlia', 'Silva', '1984-01-21', 'Rua AM, 376', 'Céu Azul', 'Barretos', 'SP', '11987654325', 'julia.silva@gmail.com'),
+('Felipe', 'Souza', '1991-04-10', 'Rua AN, 387', 'Jardim Paraíso', 'Três Lagoas', 'MS', '67987654321', 'felipe.souza@hotmail.com'),
+('Marina', 'Costa', '1986-11-20', 'Rua AO, 398', 'Vila São Pedro', 'Maringá', 'PR', '41987654324', 'marina.costa@gmail.com'),
+('Sérgio', 'Alves', '1992-05-06', 'Rua AP, 409', 'Centro', 'Itajaí', 'SC', '47987654321', 'sergio.alves@hotmail.com'),
+('Tatiane', 'Freitas', '1985-12-25', 'Rua AQ, 410', 'Vila São Jorge', 'Pato Branco', 'PR', '44987654321', 'tatiane.freitas@gmail.com'),
+('Renan', 'Pereira', '1994-03-19', 'Rua AR, 421', 'Vila Ipanema', 'Goiânia', 'GO', '62123456790', 'renan.pereira@hotmail.com'),
+('Fernanda', 'Silva', '1990-09-12', 'Rua AS, 432', 'Centro', 'São Carlos', 'SP', '16987654321', 'fernanda.silva@gmail.com'),
+('Amanda', 'Martins', '1982-07-27', 'Rua AT, 443', 'Centro', 'Taubaté', 'SP', '12987654326', 'amanda.martins@hotmail.com'),
+('Rodrigo', 'Santos', '1995-06-05', 'Rua AU, 454', 'Jardim das Palmeiras', 'São Paulo', 'SP', '11987654326', 'rodrigo.santos@gmail.com'),
+('Luana', 'Costa', '1989-01-18', 'Rua AV, 465', 'Jardim Paulista', 'Sorocaba', 'SP', '15987654321', 'luana.costa@hotmail.com'),
+('Tiago', 'Almeida', '1987-04-22', 'Rua AW, 476', 'Centro', 'São Vicente', 'SP', '11987654327', 'tiago.almeida@gmail.com');
+('Marcos', 'Silveira', '1984-02-18', 'Rua 1, 112', 'Copacabana', 'Rio de Janeiro', 'RJ', '21912345678', 'marcos.silveira@gmail.com'),
+('Laura', 'Melo', '1990-08-22', 'Rua 2, 223', 'Barra da Tijuca', 'Rio de Janeiro', 'RJ', '21923456789', 'laura.melo@hotmail.com'),
+('Roberto', 'Oliveira', '1975-12-15', 'Rua 3, 334', 'Santa Teresa', 'Rio de Janeiro', 'RJ', '21934567890', 'roberto.oliveira@gmail.com'),
+('Simone', 'Cardoso', '1989-11-10', 'Rua 4, 445', 'Leblon', 'Rio de Janeiro', 'RJ', '21945678901', 'simone.cardoso@hotmail.com'),
+('Lucas', 'Araújo', '1992-07-05', 'Rua 5, 556', 'Glória', 'Rio de Janeiro', 'RJ', '21956789012', 'lucas.araujo@gmail.com'),
+('Isabela', 'Pinto', '1987-03-17', 'Rua 6, 667', 'Ipanema', 'Rio de Janeiro', 'RJ', '21967890123', 'isabela.pinto@hotmail.com'),
+('Bruno', 'Martins', '1991-09-25', 'Rua 7, 778', 'Botafogo', 'Rio de Janeiro', 'RJ', '21978901234', 'bruno.martins@gmail.com'),
+('Fernanda', 'Santos', '1985-10-29', 'Rua 8, 889', 'Jardim Botânico', 'Rio de Janeiro', 'RJ', '21989012345', 'fernanda.santos@hotmail.com'),
+('Daniel', 'Gonçalves', '1994-05-20', 'Rua 9, 990', 'Barra da Tijuca', 'Rio de Janeiro', 'RJ', '21990123456', 'daniel.goncalves@gmail.com'),
+('Camila', 'Azevedo', '1986-06-12', 'Rua 10, 101', 'Campo Grande', 'Rio de Janeiro', 'RJ', '21901234567', 'camila.azevedo@hotmail.com'),
+('Tiago', 'Nogueira', '1988-01-30', 'Rua 11, 212', 'Pilares', 'Rio de Janeiro', 'RJ', '21912345679', 'tiago.nogueira@gmail.com'),
+('Patrícia', 'Vieira', '1993-04-25', 'Rua 12, 323', 'Rocinha', 'Rio de Janeiro', 'RJ', '21923456780', 'patricia.vieira@hotmail.com'),
+('Gustavo', 'Campos', '1982-11-05', 'Rua 13, 434', 'Laranjeiras', 'Rio de Janeiro', 'RJ', '21934567891', 'gustavo.campos@gmail.com'),
+('Sofia', 'Almeida', '1990-12-18', 'Rua 14, 545', 'Catete', 'Rio de Janeiro', 'RJ', '21945678902', 'sofia.almeida@hotmail.com'),
+('Eduardo', 'Santos', '1989-07-08', 'Rua 15, 656', 'São Conrado', 'Rio de Janeiro', 'RJ', '21956789023', 'eduardo.santos@gmail.com'),
+('Ana Paula', 'Freitas', '1985-03-30', 'Rua 16, 767', 'Engenho Novo', 'Rio de Janeiro', 'RJ', '21967890134', 'anapaula.freitas@hotmail.com'),
+('Vinícius', 'Silva', '1992-09-10', 'Rua 17, 878', 'São Cristóvão', 'Rio de Janeiro', 'RJ', '21978901245', 'vinicius.silva@gmail.com'),
+('Juliana', 'Melo', '1984-08-14', 'Rua 18, 989', 'Botafogo', 'Rio de Janeiro', 'RJ', '21989012356', 'juliana.melo@hotmail.com'),
+('Rodrigo', 'Cardoso', '1991-01-25', 'Rua 19, 100', 'Ipanema', 'Rio de Janeiro', 'RJ', '21990123467', 'rodrigo.cardoso@gmail.com'),
+('Marta', 'Fernandes', '1989-11-20', 'Rua 20, 211', 'Barra da Tijuca', 'Rio de Janeiro', 'RJ', '21901234578', 'marta.fernandes@hotmail.com');
+
+
+INSERT INTO Setor (Nome_Setor)
+VALUES 
+('Recepção'),
+('Administração'),
+('Financeiro'),
+('Nutricionista'),
+('Fonoaudiologia'),
+('TO'),
+('Psicologia'),
+('Psicopedagogia'),
+('Fisioterapia');
+
+
+
+/* Insert de dados dos funcionários. 
+Regras do negócio: 
+Residentes da cidade do Rio de Janeiro, onde está situada a clínica
+E-mail com domínio @clinicacentrosaude.com.br
+Mínimo de quatro recepcionistas, três psicólogos e uma pessoa nas demais profissões.
+*/
+INSERT INTO Funcionarios (Nome, Sobrenome, DataNasc, Endereco, Bairro, Cidade, Estado, Telefone, Email, ID_Setor, Profissao, Salario, DataAdmissao, Status)
+VALUES 
+('Joana', 'Mendes', '1987-02-20', 'Rua M, 321', 'Centro', 'Rio de Janeiro', 'RJ', '11912345678', 'joana.mendes@clinicacentrosaudade.com.br', 1, 'Recepcionista', 2000, '2024-01-01', 'Ativo'),
+('Ricardo', 'Santos', '1984-05-13', 'Rua N, 432', 'Jardim Botânico', 'Rio de Janeiro', 'RJ', '21912345678', 'ricardo.santos@clinicacentrosaudade.com.br', 2, 'Administrador', 4000, '2023-12-01', 'Ativo'),
+('Beatriz', 'Silveira', '1992-09-09', 'Rua O, 543', 'Vila Nova', 'Rio de Janeiro', 'RJ', '31912345678', 'beatriz.silveira@clinicacentrosaudade.com.br', 3, 'Financeiro', 3500, '2024-02-01', 'Ativo'),
+('Fábio', 'Cardoso', '1981-07-30', 'Rua P, 654', 'Boa Vista', 'Rio de Janeiro', 'RJ', '81912345678', 'fabio.cardoso@clinicacentrosaudade.com.br', 4, 'Nutricionista', 3500, '2024-03-01', 'Ativo'),
+('Juliana', 'Fernandes', '1994-04-25', 'Rua Q, 765', 'Zona Sul', 'Rio de Janeiro', 'RJ', '41912345678', 'juliana.fernandes@clinicacentrosaudade.com.br', 5, 'Fonoaudiólogo', 3500, '2024-04-01', 'Ativo'),
+('Rafael', 'Gonçalves', '1988-12-12', 'Rua R, 876', 'Centro', 'Rio de Janeiro', 'RJ', '51912345678', 'rafael.goncalves@clinicacentrosaudade.com.br', 6, 'Terapia Ocupacional', 2200, '2024-05-01', 'Ativo'),
+('Mariana', 'Almeida', '1991-11-07', 'Rua S, 987', 'São Cristóvão', 'Rio de Janeiro', 'RJ', '85912345678', 'mariana.almeida@clinicacentrosaudade.com.br', 7, 'Psicólogo', 3000, '2024-06-01', 'Ativo'),
+('Eduardo', 'Martins', '1985-08-15', 'Rua T, 198', 'Barra', 'Rio de Janeiro', 'RJ', '92912345678', 'eduardo.martins@clinicacentrosaudade.com.br', 8, 'Psicopedagogo', 2300, '2024-07-01', 'Ativo'),
+('Aline', 'Pereira', '1993-03-10', 'Rua U, 209', 'Centro', 'Rio de Janeiro', 'RJ', '71912345678', 'aline.pereira@clinicacentrosaudade.com.br', 9, 'Fisioterapeuta', 2200, '2024-08-01', 'Ativo'),
+('Gustavo', 'Vieira', '1986-10-03', 'Rua V, 210', 'Centro', 'Rio de Janeiro', 'RJ', '61112345678', 'gustavo.vieira@clinicacentrosaudade.com.br', 1, 'Recepcionista', 2000, '2024-09-01', 'Ativo'),
+('Cláudia', 'Santos', '1990-06-15', 'Rua W, 321', 'Copacabana', 'Rio de Janeiro', 'RJ', '21923456789', 'claudia.santos@clinicacentrosaudade.com.br', 1, 'Recepcionista', 2000, '2024-10-01', 'Ativo'),
+('Marcelo', 'Lima', '1988-12-05', 'Rua X, 432', 'Leblon', 'Rio de Janeiro', 'RJ', '21934567890', 'marcelo.lima@clinicacentrosaudade.com.br', 1, 'Recepcionista', 2000, '2024-11-01', 'Ativo'),
+('Roberta', 'Campos', '1985-04-20', 'Rua Y, 543', 'Botafogo', 'Rio de Janeiro', 'RJ', '21945678901', 'roberta.campos@clinicacentrosaudade.com.br', 7, 'Psicóloga', 3000, '2024-12-01', 'Ativo'),
+('Fernando', 'Barros', '1992-11-30', 'Rua Z, 654', 'Ipanema', 'Rio de Janeiro', 'RJ', '21956789012', 'fernando.barros@clinicacentrosaudade.com.br', 7, 'Psicólogo', 3000, '2024-01-01', 'Ativo');
+
+
+INSERT INTO Estoque (Nome_Produto, QuantidadeUn, Valor_ProdutoUn)
+VALUES 
+('Papel A4 500 folhas', 10, 30),
+('Caneta Azul', 50, 3.00),
+('Caneta Vermelha', 50, 3.00),
+('Pasta Larga', 200, 20.00),
+('Pasta Média', 250, 25.00),
+('Fita Adesiva', 400, 5.00),
+('Marca Texto Amarelo', 50, 6.00),
+('Marca Texto Verde', 50, 6.00),
+('Lixeira Plástica', 10, 80.00),
+('Termômetro Digital', 10, 40.00),
+('Luvas Descartáveis Pct 50', 100, 45.00),
+('Máscara Facial Pct 50', 100, 35.00),
+('Álcool em Gel 1L', 10, 27.00),
+('Algodão Hidrófilo Pct 50', 20, 5.00),
+('Curativo Adhesivo Pct 50', 65, 45.00),
+('Gaze Esterilizada Pct 50', 500, 23.00),
+('Solução Salina 1L', 200, 30.00),
+('Bandagem Pct 50', 250, 50.00),
+('Desinfetante 1L', 5, 20.00),
+('Aparelho de Pressão', 5, 120.00),
+('Papel Toalha Pct 100', 20, 15.00),
+('Desinfetante de Mãos 1L', 10, 16.00),
+('Espátula de Madeira Pct 50', 200, 15.00),
+('Saco de Lixo Clínico', 2000, 21.00),
+('Cotonetes Pct 50', 20, 17.00),
+('Lâmpadas para Consultório', 20, 8.00),
+('Cabo de Equipamento', 8, 10.00),
+('Aspirador de Poeira', 2, 150.00),
+('Toalha de Algodão', 10, 30.00),
+('Computador', 6, 3500.00),
+('Celular', 1, 1900.00),
+('Câmera', 5, 320.00);
+
+
+INSERT INTO NivelAcesso (Nivel, ID_Setor)
+VALUES 
+('Admin', 2),
+('Atendimento', 1),
+('Financ', 3),
+('Nutrição', 4),
+('Fono', 5),
+('TO', 6),
+('Psico', 7),
+('Psicopedag', 8),
+('Fisio', 9);
