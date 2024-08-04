@@ -48,6 +48,18 @@ CREATE TABLE Estoque (
 );
 
 
-
+/*Em processo*/
+CREATE TABLE Agendamentos (
+	Data DATE NOT NULL,
+	Hora TIME NOT NULL,
+	ID_Paciente SMALLINT NOT NULL,
+	Nome VARCHAR (10) FOREIGN KEY,
+	CONSTRAINT fk_Nome FOREIGN KEY (Nome)
+	REFERENCES Paciente (Nome),
+	CONSTRAINT fk_ID_Paciente FOREIGN KEY (ID_Paciente)
+	REFERENCES Paciente (ID_Paciente),
+	CONSTRAINT fk_ID_Funcionario FOREIGN KEY (ID_Funcionario)
+	REFERENCES Funcionario (ID_Funcionario)
+);
 	
 
