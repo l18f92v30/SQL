@@ -1,3 +1,4 @@
-### Estudos SQL
+Repository created to monitor studies with SQL server, using DBMS SSMS and also T-SQL.
 
-Repositório criado para acompanhamento de estudos com SQL server, utilizando SGBD SSMS e também T-SQL.
+Contact:  https://www.linkedin.com/in/leticia-faver-777757101/
+Leticia Faver
