@@ -1,0 +1,17 @@
+-- Using procedure sp_MSforeachdb for creating a table in all databases on instance
+-- Query tested and validate for Leticia Faver
+
+EXEC sp_MSforeachdb '
+IF DB_NAME() NOT IN (''master'', ''model'', ''msdb'', ''tempdb'') 
+BEGIN
+    USE [?];
+    IF OBJECT_ID(''Teste123'', ''U'') IS NULL -- Check if this table exist
+    BEGIN
+        CREATE TABLE Teste123 (  -- Create table example Teste123 with variables
+            ID INT PRIMARY KEY IDENTITY(1,1),
+            Name VARCHAR(100),
+            CreateDate DATETIME DEFAULT GETDATE()
+        );
+    END
+END
+'
